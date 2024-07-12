@@ -1,0 +1,17 @@
+<section class="training-container">
+    <div class="training-container__card-training" *ngFor=" let backTraining of backTrainings">
+        <span></span>
+        <div class="training-container__card-training__card-image">
+            <img [src]="backTraining.image" alt="Back Training image">
+        </div>
+        <div class="training-container__card-training__card-text">
+            <h1>{{ backTraining.title }}</h1>
+            <div class="">
+                <p>Séries: <strong>4 de 10x</strong></p>
+                <p>Intervalo: <strong>{{ backTraining.interval }}min</strong></p>
+                <p>Carga: <strong>{{ backTraining.charge }}kg</strong></p>
+                <button>Editar</button>
+            </div>
+        </div>
+    </div>
+</section>
